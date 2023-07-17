@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.clr{
+    clear: both;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    src: url(../myriad-font/MYRIADPRO-BOLD.OTF);
+    font-family: myriad-bold;
+}
+@font-face {
+    src: url(../myriad-font/MyriadPro-Light.otf);
+    font-family: myriad-light;
+}
+@font-face {
+    src: url(../myriad-font/MYRIADPRO-REGULAR.OTF);
+    font-family: myriad-regular;
+}
+@font-face {
+    src: url(../myriad-font/MYRIADPRO-SEMIBOLD.OTF);
+    font-family: myriad-semibold;
+}
+.common_text{
+    text-align: center;
+   
+}
+.common_text img{
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.common_text h2{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+/* =====================
+    Common css end
+===================== */
+/* =====================
+    Header part start
+===================== */
+#header{
+    background-color: #0872b9;
+    height: 32px;
+}
+.header_row{
+    line-height: 32px;
+}
+.header_row .text_col{
+    width: 50%;
+    float: left;
+}
+.header_row .icon_col{
+    width: 50%;
+    float: left;
+}
+.header_row .text_col p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #e7e7e7;
+    font-family: 'Open Sans', sans-serif;
+}
+.icon_col ul{
+    float: right;
+}
+.icon_col ul li{
+    float: left;
+    margin-left: 25px;
+}
+.icon_col ul li a i{
+    color: #fff;
+}
+/* =====================
+    Header part end
+===================== */
+/* =====================
+    Menu part start
+===================== */
+#main_menu{
+    height: 80px;
+}
+.logo_col{
+    width: 30%;
+    height: 40px;
+    float: left;
+    line-height: 80px;
+}
+.logo_col img{
+    width: 80px;
+}
+.menu_col{
+    width: 70%;
+    float: left;
+    line-height: 80px;
+}
+.menu_col ul{
+    float: right;
+}
+.menu_col ul li{
+    float: left;
+}
+.menu_col ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: myriad-regular;
+    color: #353535;
+    margin-left: 15px;
+    transition: all linear .3s;
+}
+.menu_col ul li a:hover{
+    color: #0872b9;
+}
+/* =====================
+    Menu part end
+===================== */
+/* =====================
+    Banner part start
+===================== */
+#banner{
+    height: 400px;
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.overly{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.banner_text{
+    padding-top: 88px;
+    float: right;
+    text-align: right;
+}
+
+.banner_text h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner_text h1{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: -10px 0 10px;
+}
+.banner_text p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    width: 440px;
+    line-height: 24px;
+}
+.banner_button{
+    margin-top: 27px;
+}
+.banner_button a{
+    width: 84px;
+    height: 30px;
+    background:#0872b9;
+    border: 2px solid #0872b9;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+    transition: all linear .3s;
+    margin-left: 15px;
+}
+.banner_button a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+/* =====================
+    Banner part end
+===================== */
+/* =====================
+    About part start
+===================== */
+#about{
+    padding: 60px 0;
+}
+.about_row{
+    margin-top: 40px;
+}
+.about_row .image_col{
+    width: 382px;
+    float: left;
+}
+.about_row .text_col{
+    width: 538px;
+    float: left;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.about_row .text_col p span{
+    display: block;
+    margin-top: 40px;
+}
+.about_row .text_col p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    line-height: 24px;
+}
+/* =====================
+    About part end
+===================== */
+/* =====================
+    Services part start
+===================== */
+#service{
+    padding-bottom: 60px;
+}
+.service_row{
+    margin-top: 53px;
+}
+.service_col{
+    width: 31.91%;
+    background-color: #f1f1f1;
+    padding: 50px 20px 20px;
+    position: relative;
+    transition: all linear .3s;
+    cursor: pointer;
+    float: left;
+    margin-right: 20px;
+}
+.service_text{
+    text-align: center;
+}
+.service_text h3{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    text-transform: uppercase;
+}
+.service_text p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+}
+.service_icon img{
+    width: 35px;
+   
+}
+.service_icon{
+    width: 70px;
+    height: 70px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #fff;
+    transition: .3s;
+}
+.service_col:hover{
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 /75%);
+}
+.service_icon::after {
+    content: '';
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    border-radius: 50%;
+    border: 4px solid #f1f1f1;
+    transition: .3s;
+}
+.service_icon::before {
+    content: '';
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.service_col:hover .service_icon{
+    background-color: #5bc5f4;
+}
+.service_col:hover .service_icon::after{
+    border-color: #5bc5f4;
+}
+.service_row .service_col:nth-child(3){
+    margin-right: 0;
+}
+/* =====================
+    Services part end
+===================== */
+/* =====================
+    Portfolio part start
+===================== */
+#portfolio{
+    padding-bottom: 60px;
+}
+.port_col{
+    width: 23.4%;
+    float: left;
+    margin-right: 20px;
+}
+.port_row{
+    margin-top: 10px;
+}
+.port_row .port_col:nth-child(4){
+    margin-right: 0;
+}
+.port_col .images{
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.port_col .images:hover .overly{
+    transform: scale(1.5);
+}
+.port_col .images .overly{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear .4s;
+    border-radius: 50%;
+    border: 6px solid #5bc5f4;
+
+}
+.port_col .images .overly a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5bc5f4;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+/* =====================
+Portfolio part end
+===================== */
+/* =====================
+ Team part start
+===================== */
+#team_part{
+    padding-bottom: 60px;
+}
+.team_row {
+ margin-top: 30px;
+}
+.team_col{
+    width: 23.4%;
+    float: left;
+    margin-right: 20px;
+}
+.team_row .team_col:nth-child(4){
+    margin-right: 0;
+}
+.team_text{
+    text-align: center;
+}
+.team_text h3{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.team_col:hover .team_text h3{
+    color: #5bc5f4;
+}
+.team_text p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #555555;
+}
+.team_img{
+    position: relative;
+    overflow: hidden;
+}
+.team_col:hover .team_img{
+    box-shadow: 0px 1px 7px -1px #000;
+}
+.team_img .overly{
+    right: -80px;
+    width: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.team_img:hover .overly{
+    right: 0;
+}
+.team_img .overly ul li a{
+    color: #fff;
+}
+.team_img .overly ul li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+.team_img .overly ul li:hover{
+    background: #5bc5f4;
+    border-color: #5bc5f4;
+}
+/* =====================
+Team part end
+===================== */
+/* =====================
+Testimonial part start
+===================== */
+#test{
+    padding-bottom: 60px;
+}
+.test_row{
+    margin-top: 30PX;
+}
+.test_row .test_col{
+    width: 48.93%;
+    float: left;
+    margin-right: 20px;
+}
+.test_row .test_col:nth-child(2){
+    margin-right: 0;
+}
+.test_text{
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 35px;
+    position: relative;
+}
+.test_img{
+    width: 80px;
+    margin: 0 auto;
+}
+.test_text ul {
+    display: flex;
+    justify-content: center;
+    color: #0872b9;
+}
+.test_text h3{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    text-transform: uppercase;
+}
+.shape {
+    width: 30px;
+    height: 30px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%)  rotate(135deg)  ;
+}
+/* =====================
+Testimonial part end
+===================== */
+/* =====================
+Footer part start
+===================== */
+#footer{
+    padding: 20px;
+    background: #353535;
+}
+.footer_row{
+    display: flex;
+}
+.footer_logo{
+    width: 80px;
+
+}
+.logo_part p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #f1f1f1;
+    margin-top: 30px;
+}
+.logo_part p span{
+    display: block;
+    margin-top: 35px;
+}
+.foot_logo_col{
+    width: 216px;
+}
+.footer_contact_col{
+    margin-right: 0 25px;
+}
+.contact_item{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact_item .icon{
+    margin-right: 10px;
+}
+.contact_item .icon span i{
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    background: #5bc5f4;
+    border-radius: 50%;
+}
+.contact_item ul li a{
+    color: #fff;
+}
+.footer_contact_col h2{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.footer_important_link_col{
+    margin-left: 20px;
+}
+.footer_important_link_col h2{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+.footer_important_link_part{
+
+    margin-top: 32px;
+}
+.footer_important_link_part ul li a{
+    color: #ffffff;
+  
+
+}
+.footer_important_link_part ul li :hover{
+    color: #0872b9;
+}
+.footer_important_link_col ul li{
+    margin-top: 25px;
+    transition: all linear .3s;
+  
+}
+.footer_important_link_part div{
+    float: left;
+    margin-right: 23px;
+}  
+
+.footer_img_col h2{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+ 
+}
+.footer_img{
+    margin-top: 32px;
+}
+/* =====================
+Footer part end
+===================== */
+
+/* =====================
+Finishing part start
+===================== */
+#finish{
+    padding: 20px;
+    background-color: #555555;
+}
+.finishing{
+    display: flex;
+    justify-content: center;
+}
+.finishing1 h3{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #f1f1f1;
+}
+.finishing2 h3{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #f1f1f1;
+    transition: all linear .3s;
+}
+.finishing2 h3:hover{
+    color: #0872b9;
+}
+/* =====================
+Finishing part end
+===================== */
